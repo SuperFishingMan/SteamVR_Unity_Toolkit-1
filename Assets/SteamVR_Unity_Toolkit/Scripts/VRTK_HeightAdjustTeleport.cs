@@ -46,7 +46,7 @@ namespace VRTK
         {
             float newY = this.transform.position.y;
             //Check to see if the tip is on top of an object
-            if (target && (tipPosition.y + 0.5f) > (target.position.y + (target.localScale.y / 2)))
+            if (target && (tipPosition.y + 0.5f) > (target.localPosition.y + (target.localScale.y / 2)))
             {
                 newY = tipPosition.y;
             }
